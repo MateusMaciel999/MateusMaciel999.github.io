@@ -1,0 +1,36 @@
+<section class="produtos" id="masculino">
+    <div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito(this)" aria-label="Adicionar aos favoritos" Add commentMore actions
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; padding: 0;"
+        data-favorito="false">
+  <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+</button>
+      <img src= "img(Fotos)/imgPolo.webp"  alt="Camiseta Preta">
+      <h3 class="CamisaPreta">Camiseta Preta Masculina</h3>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camiseta Preta Masculina')">Adicionar ao carrinho</button>
+    <div class="preco">R$59,90 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito(this)" aria-label="Adicionar aos favoritos" Add commentMore actions
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; padding: 0;"
+        data-favorito="false">
+  <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+</button>
+      <img src= "img(Fotos)/imgJeans.webp"  alt="Calça Jeans">
+      <h3 class="CamisaPreta">Calça Jeans Masculino</h3>
+      <button class="botao1" onclick="adicionarAoCarrinho('Calça Jeans')">Adicionar ao carrinho</button>
+    <div class="preco">R$199,90 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito(this)" aria-label="Adicionar aos favoritos" Add commentMore actions
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; padding: 0;"
+        data-favorito="false">
+  <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+</button>
+      <img src= "img(Fotos)/imgJaqueta.webp"  alt="Jaqueta Jeans">
+      <h3 class="CamisaPreta">Jaqueta Jeans Masculino</h3>
+      <button class="botao1" onclick="adicionarAoCarrinho('Jaqueta Jeans')">Adicionar ao carrinho</button>
+    <div class="preco">R$99,90 </div>
+    </div>
+    
+  </section>

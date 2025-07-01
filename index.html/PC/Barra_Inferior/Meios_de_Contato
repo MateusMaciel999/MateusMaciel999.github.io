@@ -1,0 +1,12 @@
+   <div class="contact-columns">
+      <div class="contact-column">
+        <div class="contact-item"><i class="fab fa-twitter"></i> @inovalookBR</div>
+        <div class="contact-item"><i class="fab fa-facebook"></i> @inovalook</div>
+        <div class="contact-item"><i class="fab fa-instagram"></i> @inovalook</div>
+      </div>
+      <div class="contact-column">
+        <div class="contact-item"><i class="fas fa-envelope"></i> inovalook@loja.com.br</div>
+        <div class="contact-item"><i class="fas fa-phone"></i> +55 (47) 9925-6789</div>
+        <div class="contact-item"><i class="fas fa-credit-card"></i> Crédito/Débito/Pix</div>
+      </div>
+    </div>

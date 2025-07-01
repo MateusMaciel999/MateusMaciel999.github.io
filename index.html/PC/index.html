@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inova Look</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="main-header-content">
+      <div class="header-left">
+        <button id="menu-open-btn" class="menu-btn" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <img src="img(Fotos)/imgLogo.png" alt="Logo" class="header-logo" />
+      </div>
+
+      <nav class="navbar">
+        <input type="text" placeholder="Buscar..." class="search-box">
+        
+      <button id="carrinho-btn" class="carrinho-btn">
+  <img src="img(Fotos)/imgCarrinho.png" alt="Carrinho" style="width:40px; height:40px;">
+</button>
+
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="img(Fotos)/imgPromoção.webp" alt="Promo" />
+  </section>
+
+  <div class="carrossel-container">
+    <div class="carrossel" id="carrossel">
+      <button class="item" onclick="filtrarCategoria('Feminino')">
+        <img src="img(Fotos)/imgBlusaMangaF.webp" class="item-carrossel" alt="Esportes">
+        <p class="legenda">Feminino</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Masculino')">
+        <img src="img(Fotos)/imgCamisaM.webp" class="item-carrossel" alt="Frio">
+        <p class="legenda">Masculino</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Jeans')">
+        <img src="img(Fotos)/imgJeans.webp" class="item-carrossel" alt="Feminino">
+        <p class="legenda">Jeans</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Casacos')">
+        <img src="img(Fotos)/imgCasacoM.webp" class="item-carrossel" alt="Masculino">
+        <p class="legenda">Casacos</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Calças')">
+        <img src="img(Fotos)/imgCalçaF.webp" class="item-carrossel" alt="Moda">
+        <p class="legenda">Calças</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Camisetas')">
+        <img src="img(Fotos)/imgCasualM.webp" class="item-carrossel" alt="Casual">
+        <p class="legenda">Camisetas</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Regatas')">
+        <img src="img(Fotos)/imgRegataF.webp" class="item-carrossel" alt="Esportes">
+        <p class="legenda">Regatas</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Básicos')">
+        <img src="img(Fotos)/imgBásicoF.webp" class="item-carrossel" alt="Frio">
+        <p class="legenda">Básicos</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Esportes')">
+        <img src="img(Fotos)/imgEsporteF.webp" class="item-carrossel" alt="Feminino">
+        <p class="legenda">Esportes</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Acessórios')">
+        <img src="img(Fotos)/imgBonéM.webp" class="item-carrossel" alt="Masculino">
+        <p class="legenda">Acessórios</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Social')">
+        <img src="img(Fotos)/imgSocialM.webp" class="item-carrossel" alt="Moda">
+        <p class="legenda">Social</p>
+      </button>
+      <button class="item" onclick="filtrarCategoria('Moda')">
+        <img src="img(Fotos)/imgModaF.webp" class="item-carrossel" alt="Moda">
+        <p class="legenda">Moda</p>
+      </button>
+    </div>
+  </div>
+
+
+  <section class="produtos" id="masculino">
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgPolo.webp" alt="Camiseta Preta">
+      <h3 class="CamisaPreta">Camiseta Branca Masculina</h3>
+      <div class="avaliacao"> ★★★★☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camiseta Preta Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$59,90 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgJeans.webp" alt="Calça Jeans">
+      <h3 class="CamisaPreta">Calça Jeans Masculino</h3>
+      <div class="avaliacao"> ★★★★★ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Calça Jeans')">Adicionar ao carrinho</button>
+      <div class="preco">R$199,90 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgJaqueta.webp" alt="Jaqueta Jeans">
+      <h3 class="CamisaPreta">Jaqueta Jeans Masculino</h3>
+      <div class="avaliacao"> ★★★☆☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Jaqueta Jeans')">Adicionar ao carrinho</button>
+      <div class="preco">R$99,90 </div>
+    </div>
+  </section>
+
+  <section class="produtos" id="feminino">
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgRegataF.webp" alt="Regata Básica Feminina">
+      <h3 class="CamisaPreta">Regata Básica Feminina</h3>
+      <div class="avaliacao"> ★★★★☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Regata Básica Feminina')">Adicionar ao carrinho</button>
+      <div class="preco">R$69,99 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgCalçaF.webp" alt="Calça feminina">
+      <h3 class="CamisaPreta">Calça Feminina</h3>
+      <div class="avaliacao"> ★★☆☆☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Calça feminina')">Adicionar ao carrinho</button>
+      <div class="preco">R$279,99 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgCamisaM.webp" alt="Camisa Masculina">
+      <h3 class="CamisaPreta">Camisa Casual Masculina</h3>
+      <div class="avaliacao"> ★★★★★ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$259,99 </div>
+    </div>
+  </section>
+
+  <section class="produtos" id="feminino">
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgCamisaMarrom.webp" alt="Camisa Marrom Masculina">
+      <h3 class="CamisaPreta">Blusa Marrom Masculina</h3>
+      <div class="avaliacao"> ★★★★☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Marrom Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$149,99 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgCamisaBranca.webp" alt="Camisa Branca Masculina">
+      <h3 class="CamisaPreta">Camisa Branca Masculina</h3>
+      <div class="avaliacao"> ★★★★★ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Branca Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$139,99 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgJquetaBranca.webp" alt="Jaqueta Branca">
+      <h3 class="CamisaPreta">Jaqueta Branca Feminina</h3>
+      <div class="avaliacao"> ★★★☆☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$259,99 </div>
+    </div>
+  </section>
+
+  <section class="produtos" id="feminino">
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgJaquetaMasculina.webp" alt="Camisa Marrom Masculina">
+      <h3 class="CamisaPreta">Jaqueta bomber Masculina</h3>
+      <div class="avaliacao"> ★★★☆☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Marrom Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$299,99 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgBlusaMangaF.webp" alt="Camisa Branca Masculina">
+      <h3 class="CamisaPreta">Blusa manga longa Feminina</h3>
+      <div class="avaliacao"> ★★★★★ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Branca Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$179,99 </div>
+    </div>
+    <div class="card">
+      <button class="favorito-btn" aria-label="Adicionar aos favoritos" data-favorito="false">
+        <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+      </button>
+      <img src="img(Fotos)/imgBlusaPoloF.webp" alt="Jaqueta Branca">
+      <h3 class="CamisaPreta">Blusa Polo Feminina</h3>
+      <div class="avaliacao"> ★★☆☆☆ </div>
+      <button class="botao1" onclick="adicionarAoCarrinho('Camisa Masculina')">Adicionar ao carrinho</button>
+      <div class="preco">R$259,99 </div>
+    </div>
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer-left">
+      <div class="contact-columns">
+        <div class="contact-column">
+          <div class="contact-item"><i class="fab fa-twitter"></i> @inovalookBR</div>
+          <div class="contact-item"><i class="fab fa-facebook"></i> @inovalook</div>
+          <div class="contact-item"><i class="fab fa-instagram"></i> @inovalook</div>
+        </div>
+        <div class="contact-column">
+          <div class="contact-item"><i class="fas fa-envelope"></i> inovalook@loja.com.br</div>
+          <div class="contact-item"><i class="fas fa-phone"></i> +55 (47) 9925-6789</div>
+          <div class="contact-item"><i class="fas fa-credit-card"></i> Crédito/Débito/Pix</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="final">
+      <h4>Cia. Hering Rua Hermann Hering, 1790, Bom Retiro, Blumenau - SC ∙ CEP 89010-900 CNPJ: 78.876.950/0001-71</h4>
+    </div>
+    <div class="footer-right">
+    <img src="img(Fotos)/imgLogo.png" alt="Logo Inova Look" class="footer-image">
+  </div>
+</footer>
+
+
+  <div id="cart-sidebar" aria-hidden="true">
+    <button id="menu-close-btn" class="menu-btn" aria-label="Fechar menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><strong>Homens</strong></li>
+        <li><strong>Mulheres</strong></li>
+        <li><strong>Infantil</strong></li>
+        <li>Esportes</li>
+        <li>Casual</li>
+        <li>Acessórios</li>
+        <li>Jaquetas</li>
+        <li>Verão</li>
+        <li>Regata</li>
+        <li>Camisetas</li>
+        <li>Moda</li>
+      </ul>
+    </nav>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<button class="favorito-btn" onclick="toggleFavorito(this)" aria-label="Adicionar aos favoritos" Add commentMore actions
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; padding: 0;"
+        data-favorito="false">
+  <img src="img(Fotos)/heart-white.png" alt="Favoritar" style="width: 24px; height: 24px;" />
+</button>
+
+
+
+
+
+
+
+
+/* No final do HTML */
+
+
+function toggleFavorito(botao) {
+    const img = botao.querySelector('img');
+    const isFavorito = botao.getAttribute('data-favorito') === 'true';
+
+
+      if (!isFavorito) {
+      img.src = "img(Fotos)/heart-red.png" ;
+      botao.setAttribute('data-favorito', 'true');
+    } else {
+      img.src = "img(Fotos)/heart-white.png";
+      botao.setAttribute('data-favorito', 'false');
+    }
+  }
